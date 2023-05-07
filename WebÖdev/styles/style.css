@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
 :root {
-  --main-color: rgb(144, 151, 39);
+  --main-color: rgb(151, 218, 239);
   --black-color: #000000;
   --border: 0.1rem solid rgba(255, 255, 255, 04);
 }
@@ -18,6 +18,9 @@
   transition: 0.2s ease;
 }
 p.ben {
+  text-transform: none;
+}
+p.sehrim2 {
   text-transform: none;
 }
 
@@ -61,8 +64,98 @@ a {
   color: var(--black-color);
   text-decoration: none;
 }
-
+/*! silder start */
+.tarsus .tarihi-mekan-info {
+  color: #fff;
+}
+.tarihi-mekan-list {
+  list-style: none;
+  padding: 0;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+.tarihi-mekan-foto {
+  width: 27rem;
+  height: 20rem;
+  object-fit: cover;
+  transition: 1s all ease-in-out;
+}
+.tarihi-mekan-info {
+  background-color: rgb(40, 40, 40, 0.4);
+  padding: 0 1rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  position: absolute;
+  top: 1rem;
+  left: 5rem;
+  top: 10%;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.tarihi-mekan {
+  position: relative;
+}
+.tarihi-mekan:hover .tarihi-mekan-info {
+  opacity: 1;
+  
+}
+.tarihi-mekan:hover .tarihi-mekan-foto {
+  transform: scale(1.2);
+  margin: 0 3rem;
+  opacity: 0.5;
+}
+.tarihi-mekanlar-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.arrow {
+  width: 10rem;
+  display: flex;
+  font-size: 12rem;
+  position: absolute;
+  right: 0;
+  top: 10rem;
+  color: #fff;
+  opacity: .5;
+  transition: .5s ease all;
+  cursor: pointer;
+}
+.arrow:hover {
+  
+  opacity: 1;
+}
+/*! slider end */
 /*! header start */
+
+.header .search-form {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3rem;
+  box-shadow: 0px 0px 25px 2px rgb(0 0 0 / 75%);
+  transform: scaleY(0);
+}
+.header .search-form.active {
+  transform: scaleY(1);
+}
+.header .search-form i {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: var(--black-color);
+}
+.header .search-form input {
+  width: 100%;
+  padding-left: 4rem;
+}
+
 .header .logo img {
   height: 8rem;
 }
@@ -97,7 +190,7 @@ a {
   background-color: transparent;
   padding-right: 1rem;
 }
-#menu-btn{
+#menu-btn {
   display: none;
 }
 /*! header end*/
@@ -108,7 +201,7 @@ a {
   background: url(../images/tarsushakkında.png);
   background-size: cover;
   background-position: center;
-  margin-top: -12.5rem;
+  margin-top: -16rem;
   display: flex;
   align-items: center;
 }
@@ -129,32 +222,59 @@ a {
 }
 
 /*!hakkında end*/
+/*! sehrim start */
+.sehrim {
+  min-height: 100vh;
+  background: url(../images/tarsus-baraji.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: -16rem;
+  display: flex;
+  align-items: center;
+}
+
+.sehrim .content {
+  max-width: 60rem;
+}
+.sehrim .content h3 {
+  font-size: 5rem;
+  color: black;
+  background-color: rgb(151, 218, 239, 0.7);
+}
+.sehrim .content p {
+  font-size: 1.4rem;
+  font-weight: 450;
+  line-height: 1.4;
+  padding: 1rem 0;
+  color: black;
+  background-color: rgb(151, 218, 239, 0.7);
+}
+
+/*! sehrim end */
+
 /*!foto start*/
 .fotoğraflar .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
-  
 }
 .fotoğraflar .box-container .box {
   padding: 3rem;
-  background-color: #fff;
+  background-color: rgb(98, 165, 185);
   border-radius: 3rem;
-  background-color: #fff;
+  background-color: rgb(98, 165, 185);
   min-height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  
 }
-.fotoğraflar .box-container .box img { 
+.fotoğraflar .box-container .box img {
   width: 100%;
   object-fit: cover;
   height: 80%;
   border-radius: 3rem;
   padding-bottom: 1.5rem;
- 
 }
 .fotoğraflar .box-container .box:hover img {
   transform: scale(1.05);
@@ -172,26 +292,25 @@ a {
 /*!foto end*/
 
 /*! responsive start  */
-@media (max-width: 1248px){
+@media (max-width: 1248px) {
   html {
-      font-size: 70%;
+    font-size: 70%;
   }
   .header {
-      padding: 1.5rem 3rem;
+    padding: 1.5rem 3rem;
   }
   .header .logo img {
-      height: 7rem;
+    height: 7rem;
   }
   section {
     padding: 2rem;
   }
-
 }
-@media (max-width: 795px){
-  #menu-btn {
+@media (max-width: 795px) {
+  .header #menu-btn {
     display: inline-block;
   }
-  .header .navbar{
+  .header .navbar {
     position: absolute;
     top: 95%;
     background-color: #fff;
@@ -199,6 +318,16 @@ a {
     width: 30rem;
     box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
     right: -100%;
+  }
+  .header .navbar.active {
+    right: 3rem;
+  }
+  .header .navbar a {
+    color: var(--black-color);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
   }
 }
 
