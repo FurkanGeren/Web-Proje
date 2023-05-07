@@ -68,24 +68,30 @@ a {
 .tarsus .tarihi-mekan-info {
   color: #fff;
 }
+
 .tarihi-mekan-list {
   list-style: none;
   padding: 0;
   height: 30rem;
   display: flex;
   align-items: center;
-  column-gap: 3rem;
+  column-gap: 30px;
+  transform: translateX(0);
+  transition: 1s all ease-in-out;
 }
+
 .tarihi-mekan-foto {
-  width: 27rem;
-  height: 20rem;
+  width: 270px;
+  height: 200px;
+  border-radius: 1rem;
+  border: var(--border);
   object-fit: cover;
   transition: 1s all ease-in-out;
 }
 .tarihi-mekan-info {
   background-color: rgb(40, 40, 40, 0.4);
   padding: 0 1rem;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: bold;
   position: absolute;
   top: 1rem;
@@ -93,17 +99,19 @@ a {
   top: 10%;
   opacity: 0;
   transition: 1s all ease-in-out;
+  right: 5rem;
+  background-size: auto;
 }
+
 .tarihi-mekan {
   position: relative;
 }
 .tarihi-mekan:hover .tarihi-mekan-info {
   opacity: 1;
-  
 }
 .tarihi-mekan:hover .tarihi-mekan-foto {
   transform: scale(1.2);
-  margin: 0 3rem;
+  margin: 0 30px;
   opacity: 0.5;
 }
 .tarihi-mekanlar-wrapper {
@@ -118,14 +126,14 @@ a {
   right: 0;
   top: 10rem;
   color: #fff;
-  opacity: .5;
-  transition: .5s ease all;
+  opacity: 0.5;
+  transition: 0.5s ease all;
   cursor: pointer;
 }
 .arrow:hover {
-  
   opacity: 1;
 }
+
 /*! slider end */
 /*! header start */
 
@@ -252,6 +260,84 @@ a {
 
 /*! sehrim end */
 
+/*! login start */
+
+.login {
+  min-height: 100vh;
+  background: var(--main-color);
+  background-size: 80;
+  background-position: center;
+  margin-top: -10rem;
+  display: flex;
+  align-items: center;
+  padding: 0 30%;
+  
+}
+.login .container {
+  background-color: #fff;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  
+  border-radius: 5px;
+  position: relative;
+}
+.container .logo img {
+  position: absolute;
+  width: 40%;
+  height: 35%;
+  left: 60%;
+  top: 0px;
+ 
+  border: 5px solid;
+  
+}
+.container .title {
+  font-size: 20px;
+  padding-bottom: 2rem;
+}
+.container .logo {
+  padding-bottom: 5rem;
+  }
+.container form .input-box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+.container form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  background-color: var(--main-color);
+}
+.container form .login-buton {
+  margin: 40px 0 20px 0;
+}
+
+.login-buton input {
+  border-radius: 2rem;
+  background-color: #000000;
+  color: #fff;
+  
+  padding-right: .5rem;
+}
+
+.container form .input-box input[type="submit"] {
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background: red;
+  transition: all 0.3s ease;
+}
+.container input {
+  padding-left: .5rem;
+}
+/*! login end */
+
 /*!foto start*/
 .fotoğraflar .box-container {
   display: grid;
@@ -310,6 +396,7 @@ a {
   .header #menu-btn {
     display: inline-block;
   }
+
   .header .navbar {
     position: absolute;
     top: 95%;
@@ -317,10 +404,10 @@ a {
     height: calc(100vh - 9rem);
     width: 30rem;
     box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
-    right: -100%;
+    right: -200%;
   }
   .header .navbar.active {
-    right: 3rem;
+    right: -1rem;
   }
   .header .navbar a {
     color: var(--black-color);
@@ -328,6 +415,28 @@ a {
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
+  }
+
+  .hakkında .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 15rem;
+  }
+  .sehrim .content h3 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  .sehrim .content p {
+    font-size: 1.3rem;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .sehrim .content h4 {
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 15rem;
+    background-color: transparent;
   }
 }
 

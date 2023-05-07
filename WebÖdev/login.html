@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/tarsus.png" alt="logo" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Hakkında</a>
+        <a href="#">Ben</a>
+        <a href="şehrim.html">Şehrim</a>
+        <a href="#">Özgeçmiş</a>
+        <a href="#">İlgi Alanlarım</a>
+        <a href="login.html" class="active">Login</a>
+      </nav>
+      <div class="button">
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div class="search-form">
+        <input
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="Ara"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+    <section class="login">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logintarsus.png" alt="logo" />
+        </div>
+        <form action="#" method="post">
+          <div class="title">LOGIN</div>
+          <div class="input-box">
+            <input type="email" id="username" placeholder="E-mail Giriniz" required autofocus />
+          </div>
+          <div class="input-box">
+            <input type="password" id= "password"placeholder="Şifrenizi Giriniz" required autofocus/>
+          </div>
+          <div class="login-buton">
+            <input type="submit" value="Giriş Yap" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+    <php src="login.php"></php>
+  </body>
+</html>
