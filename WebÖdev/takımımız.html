@@ -1,13 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,6 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Şehrim</title>
+    <link rel="stylesheet" href="styles/takım.css" />
   </head>
   <body>
     <header class="header">
@@ -24,10 +26,10 @@
       <nav class="navbar">
         <a href="index.html">Hakkında</a>
         <a href="takımımız.html">Takımımız</a>
-        <a href="şehrim.html">Şehrim</a>
+        <a href="şehrim.html" class="active">Şehrim</a>
         <a href="özgeçmiş.html">Özgeçmiş</a>
         <a href="#">İlgi Alanlarım</a>
-        <a href="login.html" class="active">Login</a>
+        <a href="login.html">Login</a>
         <a href="#">Form</a>
       </nav>
       <div class="button">
@@ -49,26 +51,22 @@
         <i class="fas fa-search"></i>
       </div>
     </header>
-    <section class="login">
-      <div class="container">
-        <div class="logo">
-          <img src="images/logintarsus.png" alt="logo" />
-        </div>
-        <form action="#" method="post">
-          <div class="title">LOGIN</div>
-          <div class="input-box">
-            <input type="email" id="username" placeholder="E-mail Giriniz" required autofocus />
-          </div>
-          <div class="input-box">
-            <input type="password" id= "password"placeholder="Şifrenizi Giriniz" required autofocus/>
-          </div>
-          <div class="login-buton">
-            <input type="submit" value="Giriş Yap" />
-          </div>
-        </form>
+    
+    
+    <section class="takim-foto">
+       
+    </section>
+    
+    
+    
+    <section class="takim">
+      <div id="bg-image"></div>        
       </div>
     </section>
-    <script src="js/script.js"></script>
-    <php src="login.php"></php>
+    <section>
+      
+    </section>
+    <script src="js/takim.js"></script>
+   <script src="js/script.js"></script>
   </body>
 </html>

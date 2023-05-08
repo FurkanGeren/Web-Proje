@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ben</title>
+    <link rel="stylesheet" href="styles/özgeçmiş.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/tarsus.png" alt="logo" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Hakkında</a>
+        <a href="takımımız.html">Takımımız</a>
+        <a href="şehrim.html">Şehrim</a>
+        <a href="özgeçmiş.html" class="active">Özgeçmiş</a>
+        <a href="#">İlgi Alanlarım</a>
+        <a href="login.html">Login</a>
+        <a href="#">Form</a>
+      </nav>
+      <div class="button">
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div class="search-form">
+        <input
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="Ara"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="left">
+        <div class="left-image">
+          <img src="images/cv.jpg" alt="cv" />
+          <h2>Furkan Geren</h2>
+        </div>
+        <div class="personel">
+          <ul>
+            <li><i class="fas fa-briefcase"></i> Computer Engineer</li>
+            <li><i class="fas fa-location-arrow"></i> İstanbul, TR</li>
+            <li>
+              <a href="mailto:cefurkangeren@gmail.com">
+                <i class="fas fa-envelope"></i> <span class="mail">cefurkangeren @gmail.com</span>
+              </a>
+            </li>
+            <li><i class="fas fa-phone"></i> 552542668</li>
+          </ul>
+          <hr />
+        </div>
+        <div class="skills">
+          <h3><i class="fas fa-cog"></i>Skill</h3>
+          <ul>
+            <li>
+              <p>C++</p>
+              <progress max="100" value="80"></progress>
+            </li>
+            <li>
+              <p>JAVA</p>
+              <progress max="100" value="70"></progress>
+            </li>
+            <li>
+              <p>HTML</p>
+              <progress max="100" value="50"></progress>
+            </li>
+          </ul>
+        </div>
+        <div class="languages">
+          <h3><i class="fas fa-globe"></i>Languages</h3>
+          <ul>
+            <li>
+              <p>Turkish</p>
+              <progress max="100" value="100"></progress>
+            </li>
+            <li>
+              <p>English</p>
+              <progress max="100" value="70"></progress>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="right">
+        <div class="egitim">
+          <h1><i class="fas fa-university"></i> Eğitim</h1>
+          <ul>
+            <li><p>Computer Enginnering</p></li>
+            <li class="date">
+              <i class="fas fa-calendar"></i> Jan 2022 -
+              <span class="current">current</span>
+            </li>
+            <li><p>Sakarya University</p></li>
+          </ul>
+          <ul>
+            <li><p>Computer Enginnering</p></li>
+            <li class="date"><i class="fas fa-calendar"></i> 2019-2022</li>
+
+            <li><p>Çukurova University</p></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

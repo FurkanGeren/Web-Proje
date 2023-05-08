@@ -44,9 +44,6 @@ html {
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
 }
-section {
-  padding: 3.5rem 7%;
-}
 
 .heading {
   color: var(--black-color);
@@ -54,6 +51,9 @@ section {
   font-size: 3rem;
   margin-bottom: 2rem;
   border-bottom: 0.1rem solid var(--black-color);
+}
+section {
+  padding: 3.5rem 7%;
 }
 
 body {
@@ -136,7 +136,6 @@ a {
 
 /*! slider end */
 /*! header start */
-
 .header .search-form {
   position: absolute;
   top: 115%;
@@ -158,11 +157,14 @@ a {
   font-size: 2.2rem;
   margin-right: 1.5rem;
   color: var(--black-color);
+  padding-left: 1rem;
 }
 .header .search-form input {
   width: 100%;
-  padding-left: 4rem;
+  padding-left: 3rem;
+  border-radius: 10rem;
 }
+
 
 .header .logo img {
   height: 8rem;
@@ -260,6 +262,14 @@ a {
 
 /*! sehrim end */
 
+/*! özgeçmiş start */
+
+
+
+
+
+/*! özgeçmiş end */
+
 /*! login start */
 
 .login {
@@ -274,11 +284,11 @@ a {
   
 }
 .login .container {
-  background-color: #fff;
+  background-color: black;
   max-width: 350px;
   width: 100%;
   padding: 25px 30px;
-  
+  border: solid;
   border-radius: 5px;
   position: relative;
 }
@@ -289,12 +299,13 @@ a {
   left: 60%;
   top: 0px;
  
-  border: 5px solid;
+  
   
 }
 .container .title {
   font-size: 20px;
   padding-bottom: 2rem;
+  color: #fff;
 }
 .container .logo {
   padding-bottom: 5rem;
@@ -319,8 +330,8 @@ a {
 
 .login-buton input {
   border-radius: 2rem;
-  background-color: #000000;
-  color: #fff;
+  background-color: var(--main-color);
+  color: #000000;
   
   padding-right: .5rem;
 }
@@ -378,9 +389,9 @@ a {
 /*!foto end*/
 
 /*! responsive start  */
-@media (max-width: 1248px) {
+@media (max-width: 1500px) {
   html {
-    font-size: 70%;
+    font-size: 80%;
   }
   .header {
     padding: 1.5rem 3rem;
@@ -392,7 +403,7 @@ a {
     padding: 2rem;
   }
 }
-@media (max-width: 795px) {
+@media (max-width: 1100px) {
   .header #menu-btn {
     display: inline-block;
   }
@@ -416,6 +427,9 @@ a {
     padding: 0.5rem;
     font-size: 2rem;
   }
+  .header .logo img {
+    height: 5rem;
+  }
 
   .hakkında .content h3 {
     font-size: 2rem;
@@ -437,6 +451,9 @@ a {
     color: #fff;
     padding-bottom: 15rem;
     background-color: transparent;
+  }
+  .header .search-form {
+    width: 100%;   
   }
 }
 
