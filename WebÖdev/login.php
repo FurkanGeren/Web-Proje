@@ -1,7 +1,7 @@
 <?php
 
-$username = $_POST["username"];
-$password = $_POST["password"];
+$username = $_POST["Furkan@Gmail"];
+$password = $_POST["12345"];
 
 // Kullanıcı adı kontrolü
 if (!empty($username) && strpos($username, '@sakarya.edu.tr') !== false) {
@@ -10,11 +10,12 @@ if (!empty($username) && strpos($username, '@sakarya.edu.tr') !== false) {
     echo "Hoşgeldiniz " . $username;
   } else {
     header("Location: login.html");
-    echo "Hatalı " ;
+    echo "Hatalı ";
   }
-} 
-else {
+} else {
   header("Location: login.html");
   echo "Hatalı ";
 }
-?> 
+header("Location: login.html");
+exit;
+?>
