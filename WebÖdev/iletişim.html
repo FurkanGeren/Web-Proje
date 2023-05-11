@@ -50,41 +50,64 @@
     <section class="iletisim">
       <div class="isim">
         <h1 class="heading">İletşim</h1>
-        <form action="" id="form1" novalidate>
+        <form
+          action="form.php"
+          id="form1"
+          novalidate
+          method="POST"
+          target="_blank"
+          onsubmit="return validateForm()"
+        >
           <div>
             <label for="fname">İsim:</label><br />
-            <input type="text" id="fname" />
+            <input type="text" id="fname" name="fname" />
             <label for="lname">Soyisim:</label><br />
             <input type="text" id="lname" name="lname" />
             <label for="fmail">E-Mail:</label><br />
-            <input type="email" class="mail" placeholder="Mailinizi Giriniz" />
-            <label for="lname">Şifre:</label><br />
             <input
+              type="email"
+              class="mail"
+              placeholder="Mailinizi Giriniz"
+              name="fmail"
+            />
+            <label for="lsifre">Şifre:</label><br />
+            <input
+              name="lsifre"
               type="password"
               id="password"
               placeholder="Şifrenizi Giriniz"
             /><br />
+            <label for="birthday">Doğum Tarihi:</label>
+            <input type="date" id="birthday" name="birthday" />
+            <label for="phone">Telefon Numarası:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="05xx-xxx-xx-xx"
+              length="11"
+            />
             <table style="width: 100%">
               <tr>
                 <th>
+                  <label for="ferkek">Erkek</label>
                   <input
                     type="radio"
                     id="ferkek"
                     name="cinsiyet"
                     value="erkek"
                   />
-                  <label for="ferkek">Erkek</label>
                 </th>
               </tr>
               <tr>
                 <th>
+                  <label for="fkadin">Kadın</label>
                   <input
                     type="radio"
                     id="fkadin"
                     name="cinsiyet"
                     value="kadin"
                   />
-                  <label for="fkadin">Kadın</label>
                 </th>
               </tr>
             </table>
@@ -130,8 +153,12 @@
               </th>
             </tr>
           </table>
-          <button type="submit">Formu Kontrol Et</button>
+          <label for="message">Mesajınız:</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="button" id="submit-button">Formu Kontrol Et</button>
           <div id="error-message"></div>
+          <input type="submit" value="Göster" name="gonder" />
+          <input type="reset" value="Sıfırla">
         </form>
       </div>
     </section>
