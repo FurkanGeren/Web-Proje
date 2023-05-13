@@ -17,12 +17,7 @@
   text-transform: capitalize;
   transition: 0.2s ease;
 }
-p.ben {
-  text-transform: none;
-}
-p.sehrim2 {
-  text-transform: none;
-}
+
 
 html::-webkit-scrollbar {
   width: 0.8rem;
@@ -134,7 +129,7 @@ a {
 }
 /*! header end*/
 
-/*! hakkında start*/
+/*! iletisim start*/
 
 .iletisim {
   min-height: 100vh;
@@ -208,7 +203,7 @@ a {
   margin-bottom: 1rem;
   resize: none;
 }
-/*!hakkında end*/
+/*!iletisim end*/
 
 /*! responsive start  */
 @media (max-width: 1500px) {

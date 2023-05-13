@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -51,15 +51,15 @@
     <section class="login">
       <div class="container">
         <div class="logo">
-          <img src="images/logintarsus.png" alt="logo" />
+          <img src="images/logintarsus.png" alt="logo" class="logo-img"/>
         </div>
-        <form action="login.php" method="post">
+        <form id="myForm" action="login.php" method="post" target="_blank">
           <div class="title">LOGIN</div>
           <div class="input-box">
-            <input type="email" id="username" placeholder="E-mail Giriniz" required autofocus />
+            <input type="email" id="username" placeholder="E-mail Giriniz"  autofocus />
           </div>
           <div class="input-box">
-            <input type="password" id= "password"placeholder="Şifrenizi Giriniz" required autofocus/>
+            <input type="password" id= "password"placeholder="Şifrenizi Giriniz"  autofocus/>
           </div>
           <div class="login-buton">
             <input type="submit" value="Giriş Yap" />
@@ -69,5 +69,6 @@
     </section>
     
     <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>

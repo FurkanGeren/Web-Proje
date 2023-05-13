@@ -17,6 +17,12 @@
   text-transform: capitalize;
   transition: 0.2s ease;
 }
+p.ben {
+  text-transform: none;
+}
+p.sehrim2 {
+  text-transform: none;
+}
 
 html::-webkit-scrollbar {
   width: 0.8rem;
@@ -127,64 +133,115 @@ a {
 }
 /*! header end*/
 
-/*! takım start*/
-.takim {
-  min-height: 80vh;
+/*! hakkında start*/
+.hakkında {
+  min-height: 100vh;
   background: url(../images/tarsushakkında.png);
   background-size: cover;
   background-position: center;
-  margin-top: -13rem;
+  margin-top: -16rem;
   display: flex;
   align-items: center;
+}
 
+.hakkında .content {
+  max-width: 60rem;
 }
-.aciklama {
-  min-height: 80vh;
- background-color: #000000;
+.hakkında .content h3 {
+  font-size: 5rem;
+  color: #fff;
 }
-/*!
-.takim-foto {
-  min-height: 80vh;
-  margin-top: -16rem;
-  display: block;
-  align-items: center;
+.hakkında .content p {
+  font-size: 1.4rem;
+  font-weight: 450;
+  line-height: 1.4;
+  padding: 1rem 0;
+  color: #fff;
 }
-#progress-bar {
-    width: 50%;
-    height: 20px;
-    background-color: lightgray;
-    border-radius: 10px;
-    z-index: 1;
-    
-  }
-  
-  #filler {
-    height: 100%;
-    background-color: green;
-    border-radius: inherit;
-    transition: width 1s linear;
-    z-index: 1;
-  }*/
-  
-#bg-image {
-  max-height: 100vh;
-  position: absolute;
-  
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: auto;
+
+/*!hakkında end*/
+
+/*! login start */
+
+.login {
+  min-height: 100vh;
+  background: var(--main-color);
+  background-size: 80;
   background-position: center;
-  
+  margin-top: -10rem;
+  display: flex;
+  align-items: center;
+  padding: 0 30%;
 }
-/*!takım end*/
+.login .container {
+  background-color: black;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  border: solid;
+  border-radius: 5px;
+  position: relative;
+}
+.container .logo-img {
+  position: absolute;
+  width: 40%;
+  height: 35%;
+  left: 60%;
+  top: 0px;
+}
+.container .title {
+  font-size: 20px;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+.container .logo {
+  padding-bottom: 5rem;
+}
+.container form .input-box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+.container form .input-box input {
+  height: 100%;
+  width: 100%;
+
+  outline: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--main-color);
+}
+.container form .login-buton {
+  margin: 40px 0 20px 0;
+}
+
+.login-buton input {
+  border-radius: 2rem;
+  background-color: var(--main-color);
+  color: #000000;
+  padding-right: 0.5rem;
+}
+
+.container form .input-box input[type="submit"] {
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background: red;
+  transition: all 0.3s ease;
+}
+.container input {
+  padding-left: 1rem;
+  text-transform: none;
+}
+/*! login end */
 
 /*! responsive start  */
 @media (max-width: 1500px) {
   html {
-    font-size: 70%;
+    font-size: 80%;
   }
   .header {
     padding: 1.5rem 3rem;
@@ -223,10 +280,31 @@ a {
   .header .logo img {
     height: 5rem;
   }
+
+  .hakkında .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 15rem;
+  }
+
   .header .search-form {
     width: 100%;
   }
-
 }
-
+@media (max-width: 500px) {
+  input[type="password"]::placeholder,
+  input[type="email"]::placeholder {
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+  }
+  .container .logo-img {
+    height: 25%;
+  }
+  .container .title {
+    font-size: 15px;
+    color: #fff;
+  }
+  
+}
 /*! responsive end  */
