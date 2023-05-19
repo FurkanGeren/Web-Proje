@@ -20,8 +20,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
       if (xhr.readyState === 4 && xhr.status === 200) {
         if (xhr.responseText === "success") {
           alert("Hoşgeldiniz " + "(" + password + ")");
+          window.location.href = "index.html";
         } else {
           alert("Email veya şifre yanlış. Lütfen tekrar deneyin.");
+          window.location.href = "index.html";
           document.getElementById("username").value = ""; // email alanını temizle
           document.getElementById("password").value = ""; // şifre alanını temizle
           document.getElementById("username").focus(); // email alanına focuslan

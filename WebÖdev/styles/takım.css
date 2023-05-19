@@ -130,18 +130,19 @@ a {
 /*! takım start*/
 .takim {
   min-height: 80vh;
-  background: url(../images/tarsushakkında.png);
+  background: url(../images/7132.jpg);
   background-size: cover;
   background-position: center;
   margin-top: -13rem;
   display: flex;
   align-items: center;
-
 }
 .aciklama {
   min-height: 80vh;
- background-color: #000000;
+  background-color: #fff;
+  font-size: 15px;
 }
+
 /*!
 .takim-foto {
   min-height: 80vh;
@@ -165,11 +166,11 @@ a {
     transition: width 1s linear;
     z-index: 1;
   }*/
-  
+
 #bg-image {
   max-height: 100vh;
   position: absolute;
-  
+
   top: 0;
   left: 0;
   width: 100%;
@@ -177,7 +178,6 @@ a {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
-  
 }
 /*!takım end*/
 
@@ -226,7 +226,7 @@ a {
   .header .search-form {
     width: 100%;
   }
-
+  
 }
 
 /*! responsive end  */
